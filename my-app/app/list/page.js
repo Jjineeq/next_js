@@ -1,4 +1,6 @@
-
+import { Autour_One } from "next/font/google"
+import Image from "next/image"
+import image_save from '/public/food0.png'
 
 export default function List(){
     let 상품 = ['Tomatoes' ,'Pasta', 'Coconut']
@@ -11,8 +13,9 @@ export default function List(){
         {
           상품.map((a, i)=>{
             return (
-            <div className="food">
-              <h4>{상품[i]} ${price[i]}</h4>
+            <div className="food" key={i}>
+              <img src = {`/food${i}.png`} className="food-img"/> 
+              <h4>{a} ${price[i]}</h4>
             </div>
             )
           })

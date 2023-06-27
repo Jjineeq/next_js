@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
         <div className='navbar'>
           <Link href ='/'>홈</Link>
           <Link href ='/list'>리스트</Link>
+          <Link href = '/cart'>장바구니</Link>
         </div>
 
         {children}
