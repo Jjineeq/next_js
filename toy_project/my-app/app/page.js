@@ -5,7 +5,7 @@ export default async function Home() {
   const db = client.db('forum')
   let result = await db.collection('post').find().toArray()
   
-
+  
   return (
     <main>
       {result[0].title + " " + result[0].content}
